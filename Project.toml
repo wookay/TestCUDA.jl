@@ -3,6 +3,9 @@ uuid = "7d0c1b18-c617-44f4-b218-cb6a67bdc4f3"
 authors = ["WooKyoung Noh <wookay.noh@gmail.com>"]
 version = "0.1.0"
 
+[deps]
+CUDA = "052768ef-5323-5732-b1bb-66c8b64840ba"
+
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
@@ -12,3 +15,4 @@ test = ["Test", "Jive"]
 
 [compat]
 julia = "1"
+CUDA = "1.1"
