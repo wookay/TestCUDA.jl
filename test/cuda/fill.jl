@@ -7,7 +7,7 @@ N = 5
 x_d = CUDA.fill(1.0f0, N)  # a vector stored on the GPU filled with 1.0 (Float32)
 y_d = CUDA.fill(2.0f0, N)  # a vector stored on the GPU filled with 2.0
 
-@test x_d isa CuArray{Float32,1,Nothing}
+@test x_d isa CuArray{Float32,1}
 @test Array(x_d) isa Vector{Float32}
 
 function gpu_add(y, n)
